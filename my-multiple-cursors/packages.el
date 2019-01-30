@@ -29,7 +29,7 @@
 
 ;;; Code:
 
-(defconst multiple-cursors-packages
+(defconst my-multiple-cursors-packages
   '(multiple-cursors)
   "The list of Lisp packages required by the multiple-cursors layer.
 
@@ -58,7 +58,7 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
-(defun multiple-cursors/init-multiple-cursors ()
+(defun my-multiple-cursors/init-multiple-cursors ()
   (use-package multiple-cursors
     :defer t
     :bind (("C->" . mc/mark-next-like-this)
